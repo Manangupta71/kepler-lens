@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --bg-deep: #060913;
+  --bg-card: #0d1527;
+  --bg-card-hover: #131f38;
+  --border-subtle: #1c2b4d;
+  --border-bright: #2d4375;
+  --planet-cyan: #06b6d4;
+  --planet-emerald: #10b981;
+  --impostor-rose: #f43f5e;
+  --impostor-amber: #f59e0b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(6, 182, 212, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(244, 63, 94, 0.06) 0%, transparent 40%),
+    radial-gradient(1px 1px at 25px 35px, #ffffff 100%, transparent),
+    radial-gradient(1px 1px at 80px 140px, rgba(255,255,255,0.6) 100%, transparent),
+    radial-gradient(1.5px 1.5px at 150px 80px, rgba(255,255,255,0.8) 100%, transparent),
+    radial-gradient(1px 1px at 220px 210px, rgba(255,255,255,0.5) 100%, transparent),
+    radial-gradient(1px 1px at 300px 120px, rgba(255,255,255,0.7) 100%, transparent);
+  background-size: 100% 100%, 100% 100%, 350px 350px, 350px 350px, 350px 350px, 350px 350px, 350px 350px;
+  background-repeat: repeat;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glass card styling */
+.glass-panel {
+  background: rgba(13, 21, 39, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel-hover:hover {
+  border-color: var(--border-bright);
+  background: rgba(19, 31, 56, 0.85);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Glowing text and borders */
+.glow-planet {
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.35);
+}
+
+.glow-impostor {
+  box-shadow: 0 0 25px rgba(244, 63, 94, 0.35);
+}
+
+/* Accessible focus ring */
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 2px solid var(--planet-cyan);
+  outline-offset: 2px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-bright);
+}

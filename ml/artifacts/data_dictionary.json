@@ -1,0 +1,101 @@
+{
+  "koi_period": {
+    "name": "Orbital Period",
+    "short_name": "Period",
+    "unit": "days",
+    "plain_description": "The time it takes the candidate to complete one full orbit around its host star.",
+    "detection_significance": "Ultra-short periods (< 1 day) or extreme values can indicate contact binary stars or tidal synchronization. Genuine habitable zone planets typically have longer periods.",
+    "typical_range": "0.5 \u2013 500 days",
+    "planet_tendency": "Moderate to long periods are typical for multi-planet systems; extreme ultra-short periods often require high scrutiny."
+  },
+  "koi_duration": {
+    "name": "Transit Duration",
+    "short_name": "Duration",
+    "unit": "hours",
+    "plain_description": "How long the star's light is partially blocked during the transit.",
+    "detection_significance": "Transit duration is tied directly to orbital velocity and stellar density via Kepler's laws. Grazing eclipsing binaries often produce abnormally brief, V-shaped transit dips.",
+    "typical_range": "1.0 \u2013 15.0 hours",
+    "planet_tendency": "Consistent, central-transit durations aligned with circular orbits favor planet status."
+  },
+  "koi_depth": {
+    "name": "Transit Depth",
+    "short_name": "Depth",
+    "unit": "ppm",
+    "plain_description": "The fraction of starlight blocked by the object, measured in parts per million (1% = 10,000 ppm).",
+    "detection_significance": "Earth blocks ~84 ppm; Jupiter blocks ~10,000 ppm (1%). Dips greater than 20,000-30,000 ppm (2-3%) usually indicate a stellar companion (eclipsing binary), not a planet.",
+    "typical_range": "50 \u2013 25,000 ppm",
+    "planet_tendency": "Shallow to moderate depths (< 10,000 ppm) strongly favor exoplanets. Extremely deep dips (> 20,000 ppm) signal impostors."
+  },
+  "koi_prad": {
+    "name": "Planetary Radius",
+    "short_name": "Radius",
+    "unit": "Earth radii (R\u2295)",
+    "plain_description": "The inferred size of the object relative to Earth (Earth = 1.0 R\u2295, Neptune = ~3.9 R\u2295, Jupiter = ~11.2 R\u2295).",
+    "detection_significance": "Objects larger than ~20 to 30 Earth radii are astrophysically too large to be planets\u2014they are almost certainly low-mass stars or brown dwarfs.",
+    "typical_range": "0.5 \u2013 30.0 R\u2295",
+    "planet_tendency": "Sizes between 0.5 and 15 R\u2295 strongly favor exoplanets. Values > 25 R\u2295 are almost always false positives."
+  },
+  "koi_teq": {
+    "name": "Equilibrium Temperature",
+    "short_name": "Eq. Temp",
+    "unit": "Kelvin (K)",
+    "plain_description": "Estimated atmospheric temperature of the planet assuming uniform heat distribution (Earth is ~255 K without greenhouse effect).",
+    "detection_significance": "Helps distinguish hot Jupiters from temperate worlds. Outlier temperatures point to extreme proximity or stellar radiation.",
+    "typical_range": "200 \u2013 2,500 K",
+    "planet_tendency": "Physical planetary atmospheres generally peak below 3,000 K."
+  },
+  "koi_insol": {
+    "name": "Insolation Flux",
+    "short_name": "Insolation",
+    "unit": "Earth flux (S\u2295)",
+    "plain_description": "The amount of stellar radiation hitting the planet compared to Earth (Earth = 1.0 S\u2295).",
+    "detection_significance": "Measures irradiance. Extremely high insolation (> 10,000 S\u2295) indicates an object grazing the stellar surface.",
+    "typical_range": "0.1 \u2013 5,000 S\u2295",
+    "planet_tendency": "Earth-like to Jupiter-like fluxes favor normal exoplanetary environments."
+  },
+  "koi_model_snr": {
+    "name": "Signal-to-Noise Ratio",
+    "short_name": "SNR",
+    "unit": "dimensionless",
+    "plain_description": "The strength of the transit signal compared to background detector and stellar noise.",
+    "detection_significance": "Low SNR (< 7.1) candidates are frequently spurious noise spikes or statistical fluctuations. High SNR indicates a clear, reliable transit signal.",
+    "typical_range": "7.0 \u2013 500+",
+    "planet_tendency": "Solid SNR (> 15-20) indicates real astrophysical signals, though high SNR can also be caused by bright eclipsing binaries."
+  },
+  "koi_impact": {
+    "name": "Impact Parameter (b)",
+    "short_name": "Impact (b)",
+    "unit": "stellar radii",
+    "plain_description": "The projected distance from the center of the stellar disk to the transit chord (0.0 = dead center, 1.0 = edge of star).",
+    "detection_significance": "Values > 1.0 indicate a grazing transit where only a fraction of the transiting body clips the stellar disk. Grazing eclipsing binaries mimic planetary dips.",
+    "typical_range": "0.0 \u2013 1.5",
+    "planet_tendency": "Values between 0.0 and 0.85 are typical for central planetary transits. Values >= 1.0 strongly correlate with false positives."
+  },
+  "koi_steff": {
+    "name": "Stellar Effective Temperature",
+    "short_name": "Star Temp",
+    "unit": "Kelvin (K)",
+    "plain_description": "The surface temperature of the host star (our Sun is ~5,778 K; red dwarfs are ~3,000-4,000 K).",
+    "detection_significance": "Characterizes the stellar host type (M, K, G, F, A dwarf). Proper host parameters are critical to derive accurate planetary properties.",
+    "typical_range": "3,000 \u2013 7,500 K",
+    "planet_tendency": "Normal main-sequence stars (4,000 - 6,500 K) host the majority of confirmed Kepler worlds."
+  },
+  "koi_slogg": {
+    "name": "Stellar Surface Gravity (log g)",
+    "short_name": "Star log(g)",
+    "unit": "log10(cm/s\u00b2)",
+    "plain_description": "The gravitational acceleration at the star's surface on a logarithmic scale (Sun = 4.44).",
+    "detection_significance": "Main-sequence dwarf stars have log g around 4.0 to 4.6. Lower values (< 3.8) indicate giant or subgiant stars, which rarely show clean planetary transits.",
+    "typical_range": "3.5 \u2013 4.8",
+    "planet_tendency": "Values >= 4.1 indicate stable dwarf stars with well-understood planetary transit geometry."
+  },
+  "koi_srad": {
+    "name": "Stellar Radius",
+    "short_name": "Star Radius",
+    "unit": "Solar radii (R\u2299)",
+    "plain_description": "The radius of the host star compared to our Sun (Sun = 1.0 R\u2299).",
+    "detection_significance": "Because transit depth measures (R_planet / R_star)\u00b2, if the star is actually a giant star (e.g. 10 R\u2299), what looked like an Earth-sized planet is actually a Jupiter or a star.",
+    "typical_range": "0.5 \u2013 3.0 R\u2299",
+    "planet_tendency": "Compact dwarf stars (0.7 \u2013 1.4 R\u2299) yield the cleanest, highest-confidence planet confirmations."
+  }
+}

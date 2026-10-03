@@ -1,0 +1,56 @@
+{
+  "model_type": "CatBoostClassifier",
+  "random_seed": 42,
+  "train_samples": 5128,
+  "val_samples": 1100,
+  "test_samples": 1100,
+  "metrics": {
+    "accuracy": 0.9182,
+    "roc_auc": 0.9758,
+    "f1_score": 0.8961,
+    "planet": {
+      "precision": 0.8546,
+      "recall": 0.9417,
+      "f1": 0.8961
+    },
+    "impostor": {
+      "precision": 0.9628,
+      "recall": 0.9041
+    }
+  },
+  "confusion_matrix": {
+    "true_negatives_impostor": 622,
+    "false_positives_planet_leak": 66,
+    "false_negatives_missed_planet": 24,
+    "true_positives_planet": 388,
+    "matrix": [
+      [
+        622,
+        66
+      ],
+      [
+        24,
+        388
+      ]
+    ]
+  },
+  "feature_importances": {
+    "koi_prad": 26.58,
+    "koi_duration": 12.61,
+    "koi_model_snr": 12.59,
+    "koi_period": 12.54,
+    "koi_impact": 8.31,
+    "koi_steff": 5.48,
+    "koi_depth": 5.07,
+    "koi_srad": 5.0,
+    "koi_teq": 4.43,
+    "koi_insol": 3.75,
+    "koi_slogg": 3.65
+  },
+  "parameters": {
+    "iterations": 600,
+    "learning_rate": 0.04,
+    "depth": 6,
+    "auto_class_weights": "Balanced"
+  }
+}

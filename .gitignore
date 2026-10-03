@@ -1,0 +1,27 @@
+# Python & Virtual Environments
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.cbm
+.pytest_cache/
+
+# Node & Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+.npm
+
+# Vite / OS
+.DS_Store
+Thumbs.db
+*.log
+
+# CatBoost info
+catboost_info/
+
+# Raw large datasets (keep artifacts and sample pool in repo)
+ml/data/raw_cumulative.csv
