@@ -212,6 +212,12 @@ npm run dev
 ```
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+### Live Deployments
+- **Backend API (Railway)**: [https://kepler-lens-production-980b.up.railway.app](https://kepler-lens-production-980b.up.railway.app)
+  - Health check: [https://kepler-lens-production-980b.up.railway.app/health](https://kepler-lens-production-980b.up.railway.app/health)
+  - Interactive Docs (Swagger): [https://kepler-lens-production-980b.up.railway.app/docs](https://kepler-lens-production-980b.up.railway.app/docs)
+- **Frontend App (Vercel)**: [https://kepler-lens-eight.vercel.app](https://kepler-lens-eight.vercel.app)
+
 ---
 
 ## Deployment Guide
